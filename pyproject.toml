@@ -1,14 +1,14 @@
 [tool.poetry]
 name = "parlant-tool-service-starter"
 version = "0.1.0"
-description = "Hello"
+description = "A starting point for Parlant tool services"
 authors = ["Yam Marcovitz <yam@emcie.co>"]
 license = "apache2"
 readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.10"
-parlant = { path = "../parlant", develop = true }
+parlant = "^1.0.2"
 
 
 [build-system]

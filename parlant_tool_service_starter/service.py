@@ -8,8 +8,6 @@ from parlant.sdk import (
     tool,
 )
 
-PORT = 8089
-
 
 @tool
 async def get_random_number(context: ToolContext) -> ToolResult:
@@ -22,7 +20,7 @@ TOOLS = [
 
 
 async def main() -> None:
-    async with PluginServer(tools=TOOLS, port=PORT):
+    async with PluginServer(tools=TOOLS, port=8089):
         pass
 
 
